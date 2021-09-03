@@ -19,8 +19,19 @@ public class solution01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Hello, please print your name.");
+        System.out.println("Hello, please print your name!");
         String name = input.next();
-        System.out.println("Hello, " + name + ", nice to meet you!");
+        if(name.contains("frank"))
+        {
+            System.out.println("Don't be Frank, Frank!");
+        }
+        else if(name.contains("jane"))
+        {
+            System.out.println("Hey, you've got the same name as my grandma!");
+        }
+        else
+        {
+            System.out.println("Hey there, " + name + "!");
+        }
     }
 }
